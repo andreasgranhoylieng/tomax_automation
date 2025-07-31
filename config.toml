@@ -1,0 +1,23 @@
+# Configuration for the PDF and Excel processing script
+
+[paths]
+# IMPORTANT: Set the absolute path to the root directory where the script will search for folders.
+# Use double backslashes (\\) on Windows.
+# Windows example: "C:\\Users\\YourUser\\Desktop\\Project_Files"
+root_directory = "C:\\Users\\Andreas\\Desktop\\tomax\\Norwegian orders"
+
+# The name of the folder where all output files will be saved.
+# This folder will be created inside the 'root_directory' if it doesn't exist.
+output_folder_name = "Processed_Documents"
+
+[search_terms]
+# Keywords used to identify relevant files and data headers.
+certificate_of_conformity = "CoC"
+material_test_certificate = "MTC"
+excel_serial_header = "Serial number"
+excel_heatno_header = "Heatno"
+
+[settings]
+# List of folder and file names to ignore during the initial scan.
+# The 'output_folder_name' is automatically ignored.
+ignore_list = [".DS_Store", "__pycache__"]
