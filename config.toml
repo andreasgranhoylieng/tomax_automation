@@ -4,10 +4,11 @@
 # IMPORTANT: Set the absolute path to the root directory where the script will search for folders.
 # Use double backslashes (\\) on Windows.
 # Windows example: "C:\\Users\\YourUser\\Desktop\\Project_Files"
-root_directory = "C:\\Users\\Andreas\\Desktop\\tomax\\Norwegian orders"
+# Mac example : "/Users/andreas/Downloads/Norwegian orders"
+root_directory = "C:\\Users\\YourUser\\Desktop\\Project_Files"
 
 # The name of the folder where all output files will be saved.
-# This folder will be created inside the 'root_directory' if it doesn't exist.
+# This folder will be created inside the 'root_directory'.
 output_folder_name = "Processed_Documents"
 
 [search_terms]

@@ -13,10 +13,10 @@ This script automates the process of finding, processing, and organizing Certifi
 
 ## Prerequisites
 
--   **Windows Operating System**
+-   **Windows Operating System or Mac**
 -   **Python 3.11**: The script has been tested with this version.
 -   **Miniconda**: A minimal installer for Conda. If you don't have it, you can download it here:
-    -   [**Download Miniconda for Windows**](https://docs.conda.io/en/latest/miniconda.html) (Select Windows 64-bit).
+    -   [**Download Miniconda**](https://docs.conda.io/en/latest/miniconda.html).
 
 ## 1. Setup and Installation
 
@@ -24,12 +24,12 @@ Follow these steps to set up the required environment using Conda.
 
 ### Step 1: Create the Conda Environment
 
-1.  Open the **Anaconda Prompt** from the Start Menu.
+1.  Open the **Anaconda Prompt** from the Start Menu (or terminal on mac).
 2.  Navigate to the project directory where you saved the files (`main.py`, `config.toml`, etc.).
     ```bash
     cd C:\path\to\your\project_folder
     ```
-3.  Create a new Conda environment from the `environment.yml` file. This command sets up an environment named `doc_processor` with Python 3.11 and all necessary libraries.
+3.  Create a new Conda environment from the `environment.yml` file (or `environment_mac.yml` on mac). This command sets up an environment named `doc_processor` with Python 3.11 and all necessary libraries.
     ```bash
     conda env create -f environment.yml
     ```
@@ -53,27 +53,10 @@ Before running the script, you **must** configure the `config.toml` file.
 2.  Modify the `root_directory` path to the **absolute path** of the folder containing your project subdirectories (e.g., `C:\\Users\\YourUser\\Documents\\Projects`).
 3.  Adjust the `output_folder_name` and other search terms if they differ from the defaults.
 
-```toml
-# config.toml
-
-[paths]
-# IMPORTANT: Use double backslashes (\\) for Windows paths.
-root_directory = "C:\\path\\to\\your\\working\\directory"
-output_folder_name = "Processed_Documents"
-
-[search_terms]
-certificate_of_conformity = "CoC"
-material_test_certificate = "MTC"
-excel_serial_header = "Serial number"
-excel_heatno_header = "Heatno"
-
-[settings]
-ignore_list = [".DS_Store", "__pycache__"]
-```
 
 ## 3. How to Run the Script
 
-Once the environment is activated and the `config.toml` file is set up, run the script from the Anaconda Prompt:
+Once the environment is activated and the `config.toml` file is set up, run the script from the Anaconda Prompt (or terminal):
 
 ```bash
 python main.py
