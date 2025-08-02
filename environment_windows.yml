@@ -43,4 +43,3 @@ dependencies:
       - six==1.17.0
       - tzdata==2025.2
       - xlsxwriter==3.2.5
-prefix: C:\Users\andreas\miniconda3\envs\doc_processor

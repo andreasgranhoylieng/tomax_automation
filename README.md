@@ -29,9 +29,9 @@ Follow these steps to set up the required environment using Conda.
     ```bash
     cd C:\path\to\your\project_folder
     ```
-3.  Create a new Conda environment from the `environment.yml` file (or `environment_mac.yml` on mac). This command sets up an environment named `doc_processor` with Python 3.11 and all necessary libraries.
+3.  Create a new Conda environment from the `environment_windows.yml` file (or `environment_mac.yml` on mac). This command sets up an environment named `doc_processor` with Python 3.11 and all necessary libraries.
     ```bash
-    conda env create -f environment.yml
+    conda env create -f environment_windows.yml
     ```
    
 
